@@ -198,8 +198,8 @@ img {
 
 .mono--grid {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Desktop: 2 columnas */
-  gap: 20px;
+  grid-template-columns: 2fr, 1fr; /* Desktop: 2 columnas */
+  gap: 10px;
   grid-template-areas: "concept-list obra-list" "baja-list categorias-list" "alta-list pagar-mono-list";
 }
 
@@ -234,6 +234,7 @@ img {
 @media screen and (max-width: 768px) {
   .mono--grid {
     grid-template-columns: 1fr; /* Una sola columna */
+    gap: 0px;
     grid-template-areas: "concept-list" "obra-list" "baja-list" "categorias-list" "alta-list" "pagar-mono-list";
   }
   .index--grid {
